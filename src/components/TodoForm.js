@@ -8,7 +8,7 @@ function TodoForm({ input, todos, setTodos, setInput, setFilter }) {
     setTodos([
       ...todos,
       {
-        id: Math.random() * 1000,
+        id: Math.random() * 100000,
         data: input,
         checked: false,
       },

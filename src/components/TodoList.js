@@ -11,7 +11,7 @@ function TodoList({ todos, setTodos, filterTodos }) {
       {filterTodos.map((todo) => (
         <Todo
           text={todo.data}
-          id={todo.id}
+          key={todo.id}
           todo={todo}
           setTodos={setTodos}
           todos={todos}
