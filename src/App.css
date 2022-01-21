@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+header {
+  font-size: 2rem;
+  text-align: center;
+  margin: 40px;
+}
+
+.form-container {
+  display: inline-flex;
+}
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-input {
+  padding: 0.5rem;
+  font-size: 2rem;
+  outline: none;
+}
+
+.todo-btn {
+  color: #ff6f47;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  border-radius: 2px;
+  border: none;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.todo-btn:hover {
   color: white;
+  background-color: #ff6f47;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-filter {
+  margin: 1rem;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select {
+  height: 3.2rem;
+  color: #ff6f47;
+  top: 0;
+  outline: none;
+  margin: 1rem;
+  width: 12rem;
+}
+
+.todo-list {
+  padding: 10px;
+}
+
+.todo-item {
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  width: 80%;
+}
+
+.item-text {
+  background-color: white;
+  width: 20rem;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.edit-btn {
+  color: white;
+  background-color: orangered;
+  border: none;
+  transition: all 1s;
+  cursor: pointer;
+  outline: none;
+  padding: 1rem;
+}
+
+.delete-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  outline: none;
+  transition: all 1s;
+  cursor: pointer;
+  padding: 1rem;
 }
